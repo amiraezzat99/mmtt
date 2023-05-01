@@ -215,7 +215,7 @@ export const cancelOrder = async (req, res, next) => {
 
 export const webHook = async (req, res, next) => {
   const stripe = new Stripe(process.env.STRIP_SECRET_KEY)
-  const endpointSecret = 'whsec_uCbGwtPv8ZR7lCiFoJIYkil53mWznLDB'
+  const endpointSecret = 'whsec_kvxZP5TStaNNbsfj7y3NnVz1ov9dSAbE'
 
   const sig = req.headers['stripe-signature']
 
